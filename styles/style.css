@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Work Sans";
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url("../img/home-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+/* TODO LO REFERENTE AL NAVBAR */
+nav {
+  margin-top: 3%;
+  height: auto;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+nav ul li a {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+/* TODO LO REFERENTE A LA MAIN  */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+main h1 {
+  color: white;
+  font-size: 5rem;
+  margin: 20px;
+}
+
+main h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+main img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+/* TODO LO REFERENTE A FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+footer nav {
+  margin: 20px 0;
+}
+footer nav li a {
+  font-size: 1.1rem;
+}
+
+
+.copyright p {
+  margin: 5px 0;
+  font-size: 0.8rem;
+}
+
+.enlacesSinFormato {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.enlacesSinFormato:hover {
+  color: #6bdec8;
+}
+#seleccion {
+    padding-bottom:10px;
+    border-bottom: 2px solid ;
+  }
+
+
+/* TODO LO REFERENTE A PAGINA */
+
+.pagina{
+    background-color: white;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:auto;
+}
+
+header.hdPagina{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    background-color: #000000;
+    color:#FFFFFF;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:30px;
+}
+header.hdPagina img{
+    width: 20px;
+    height: 20px;
+    padding-right:5px;
+}
+a.enlacesSinFormatoPagina{
+    text-decoration: none;
+    color:#FFFFFF;
+    font-size: 0.9rem;
+}
+.enlacesSinFormatoPagina:hover {
+    color: #6bdec8;
+  }
+.navPagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:10px;
+    margin-bottom: 30px;
+}
+main.mainPagina{
+    display: flex;
+    flex-direction: column;
+   
+    width: 60%;
+    
+}
+article .articulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      
+}
+article.articulo h2{
+  margin:20px;
+}
+.articuloIzquierda p{
+  margin:5px 0;
+  text-align: left;
+  
+}
+.tituloPagina{
+  color:#000000;
+}
+body.pagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+footer.ftPagina{
+  margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    background-color: #000000;
+    color:#FFFFFF;
+}
+nav.enlacesFooterPagina{
+  display:flex;
+  width: 60%;
+}
+nav.enlacesFooterPagina ul li{
+  margin:0;
+  padding-right:15px;
+}
+div.copyrightPagina{
+  display: flex;
+  width:60%;
+  padding-bottom:50px;
+}
+div.videoIframe{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: start;
+  
+  width: 561px;
+}
+.video-descripcion {
+  font-size: 16px;
+  color: #555; /* Color gris para el texto */
+}
+section.seccion{
+  display: flex;
+  margin:40px 0;
+  justify-content: center;
+}
+.articuloIzquierda{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom:50px;
+}
+
+.articuloIzquierda h2{
+  margin:0;
+  padding:0;
+  text-align: start;
+  color: #000000;
+    
+}
+.articuloIzquierda p{
+  text-align: start;
+}
+#linea{
+  padding: 5px;
+  border-bottom: 1px solid;
+}
+
+.articuloIzquierda ul{
+  list-style-type: disc;
+  padding-left: 40px;
+}
+.articuloIzquierda li {
+  text-align: start;
+  padding-top:10px;
+  margin-bottom: 5px;
+}
+#enlaceMarron {
+  color:#942C0B;
+  
+}
+
+.sinPuntos li{
+  list-style-type:none;
+}
+.sinPuntos p{
+  padding-left:30px;
+}
+
+.articuloCursos{
+  margin:0;
+  padding:40px 0;
+}
+.articuloCursos h1{
+  margin: 0;
+  padding: 0;
+}
+.imagenCurso{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.seccion{
+  width: 100%;
+}
+figcaption{
+  
+  text-align: start;
+}
+
+#titulo-cursos{
+  text-align: start;
+  color:#000000;
+  padding-bottom:30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+th, td {
+  border: none;
+  text-align: left;
+  padding: 10px;
+}
+th {
+  background-color: #f4f4f4;
+  font-weight:normal;
+  font-size: 0.9rem;
+}
+tr:nth-child(odd) {
+  background-color: #a8ede3; /* Color para las filas alternas */
+}
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+td:first-child {
+  font-weight: bold;
+}
+h4{
+  margin:5px 0;
+  padding:5px 0;
+  width: 100%;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  font-weight: normal;
+}
+#final{
+  width: 100%;
+  text-align: start;
+  font-size:0.8rem;
+  border-bottom:1px solid;
+  margin-bottom: 50px;
+}
+
+
+.copyrightPagina{
+  font-size:0.8rem;
+}
+
+#incripcionCursos{
+  color:#000000;
+  margin:40px 0;
+}
+.seccionIns{
+  width: 100%;
+  text-align: start;
+  padding-bottom: 30px;
+}
+.registration-form{
+  width: 100%;
+}
+.form-section{
+  width: 100%;
+}
+label {
+  
+  font-size: 14px;
+  margin: 8px 0;
+  color: #555;
+  width: auto;
+}
+
+input, select, textarea {
+  margin:0;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  
+}
+
+textarea {
+  resize: vertical;
+  width: 93%;
+  height:200px;
+}
+.boton{
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  padding-bottom: 40px;
+}
+button {
+  background-color: #942C0B;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+  height:auto;
+}
+
+button:hover {
+  background-color: #218838;
+}
+.aceptarPolitica{
+  width: 100%;
+  text-align: start;
+  padding-bottom: 20px;;
+  
+}
+.form-section {
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+legend{
+  text-align: start;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.form-section #primera{
+  display:flex;
+  justify-content:space-around;
+  padding:20px;
+}
+.form-section #segunda{
+  width: 100%;
+}
+.form-section #tercera{
+  width: 100%;
+}
+.formIzquierda{
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  
+}
+.formDerecha{
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+#fieldInterno{
+  
+ 
+  width: 90%;
+   
+}
+.label{
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  padding:20px;
+}
+.interno{
+  margin:20px;
+}
+.tituloLabel{
+  width: 100%;
+  text-align: start;
+  padding-left: 20px;
+  padding-bottom: 10px;
+
+}
+.tituloPagina{
+  text-decoration: none;
+  color:white;
+}
+.tituloPagina#titulos{
+  color:#000000;
+}
+span{
+  font-weight: bold;;
+}
+
+
+
+

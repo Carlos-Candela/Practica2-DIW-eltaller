@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INCRIPCIÓN</title>
+    <link rel="icon" href="../img/favicon-32x32.png" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="pagina">
+    <header class="hdPagina">
+        <div class="logo">
+            <img src="../img/isologo-taller.png" />
+            <a href="./index.html" class="enlacesSinFormatoPagina"><h2>el taller</h2></a>
+          </div>
+      <nav class="navPagina">
+        <ul>
+            <li><a class="enlacesSinFormatoPagina" href="./que-es-la-ceramica.html" >CERÁMICA</a></li>
+            <li><a class="enlacesSinFormatoPagina" href="./cursos.html">CURSOS</a></li>
+            <li><a class="enlacesSinFormatoPagina" href="./inscripcion-cursos.html" id="seleccion">INSCRIPCIÓN</a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <main class="mainPagina">
+      <h2 class="tituloPagina" id="incripcionCursos">Inscripción a los cursos</h2>
+      <section class="seccionIns">
+        <p class="video-descripcion" >Los campos señalados con * son obligatorios</p>
+      </section>
+      <form class="registration-form">
+        <div class="form-section">
+          <fieldset id="primera">
+          <legend>Detalles de la inscripción</legend>
+          <div class="formIzquierda">
+            <label for="name">Nombre *</label>
+            <input type="text" id="name" required>
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" required>
+            <label for="birthdate">Fecha de nacimiento *</label>
+            <input type="date" id="birthdate" required>
+          </div>
+          <div class="formDerecha">
+            <label for="last-name">Apellidos *</label>
+            <input type="text" id="last-name" required>
+            <label for="phone">Teléfono</label>
+          <input type="tel" id="phone">
+          <label for="course">Curso *</label>
+          <select id="course" required>
+            <option value="">Selecciona el curso</option>
+            <option value="curso1">Curso 1</option>
+            <option value="curso2">Curso 2</option>
+            <option value="curso3">Curso 3</option>
+          </select>
+          </div>
+         
+        </fieldset>
+        </div>
+    
+        <div class="form-section">
+          <fieldset id="segunda">
+          <legend>Otras informaciones</legend>
+          <fieldset class="interno">
+            <legend>¿Has hecho otros cursos con nosotros?</legend>
+          <div class="label">
+            <label for="yes">
+            <input type="radio" name="other-courses" id="yes" required> Sí
+          </label>
+        
+          <label for="no">
+            <input type="radio" name="other-courses" id="no" required> No
+          </label>
+        </div>
+          </fieldset>
+          <div class="tituloLabel">
+          <label for="comments">¿Quieres comentar o preguntar algo?</label>
+        </div>
+          <textarea id="comments" rows="4"></textarea>
+          </fieldset>
+        </div>
+    
+        <div class="form-section">
+          <fieldset id="tercera">
+          <legend>Elige un método de pago *</legend>
+          <div class="label">
+          <label for="transfer">
+            <input type="radio" name="payment-method" id="transfer" required> Transferencia
+          </label>
+          <label for="credit-card">
+            <input type="radio" name="payment-method" id="credit-card" required> Tarjeta de débito / crédito
+          </label>
+          <label for="cash">
+            <input type="radio" name="payment-method" id="cash" required> En efectivo
+          </label>
+        </div>
+        </fieldset>
+        </div>
+        <section class="seccionIns">
+          <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <span>EL TALLER. Finalidades:</span> recogida de datos para la inscripción como socio del interesado. <span>Legitimación:</span> Consentimiento del interesado. <span>Destinatarios:</span> No están previstas cesiones de datos a terceros, excepto obligación legal. <span>Derechos:</span> Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a id="enlaceMarron" href="mailto:info@eltaller.es">info@eltaller.es.</a> <span>Información Adicional:</span> Puede ampliar la información en el enlace de <a id="enlaceMarron" href="">Aviso Legal</a> y <a id="enlaceMarron" href="">Política de privacidad.</a> </p>
+        </section>
+        <div class="aceptarPolitica">
+          <div class="aceptar">
+          <label>
+            <input type="checkbox" required> He leído y acepto la <a href="#">política de privacidad</a>
+          </label>
+        </div>
+        </div>
+        <div class="boton">
+        <button type="submit">INSCRÍBEME</button>
+      </div>
+      </form>
+
+    </main>
+
+    <footer class="ftPagina">
+      <nav class="enlacesFooterPagina">
+        <ul>
+          <li><a class="enlacesSinFormato" href="">Aviso legal</a></li>
+          <li><a class="enlacesSinFormato" href="">política de privacidad</a></li>
+          <li><a class="enlacesSinFormato" href="">política de cookies</a></li>
+          
+    </nav>
+    <div class="copyrightPagina">
+      <p>2024 © Carlos Candela Sabater</p>
+      
+    </div>
+    </footer>
+  </body>
+</html>
