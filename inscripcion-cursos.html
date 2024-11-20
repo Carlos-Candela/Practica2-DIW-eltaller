@@ -34,86 +34,126 @@
         <p class="video-descripcion" >Los campos señalados con * son obligatorios</p>
       </section>
       <form class="registration-form">
-        <div class="form-section">
-          <fieldset id="primera">
-          <legend>Detalles de la inscripción</legend>
-          <div class="formIzquierda">
-            <label for="name">Nombre *</label>
-            <input type="text" id="name" required>
-            <label for="email">Correo electrónico *</label>
-            <input type="email" id="email" required>
-            <label for="birthdate">Fecha de nacimiento *</label>
-            <input type="date" id="birthdate" required>
-          </div>
-          <div class="formDerecha">
-            <label for="last-name">Apellidos *</label>
-            <input type="text" id="last-name" required>
-            <label for="phone">Teléfono</label>
-          <input type="tel" id="phone">
-          <label for="course">Curso *</label>
-          <select id="course" required>
-            <option value="">Selecciona el curso</option>
-            <option value="curso1">Curso 1</option>
-            <option value="curso2">Curso 2</option>
-            <option value="curso3">Curso 3</option>
-          </select>
-          </div>
-         
+    <div class="form-section">
+        <fieldset id="primera">
+            <legend>Detalles de la inscripción</legend>
+            <div class="formIzquierda">
+                <label for="name">Nombre *</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    required 
+                    pattern="^[A-Za-zÀ-ÖØ-öø-ÿ'\\-]{2,64}$" 
+                    title="Solo letras, apóstrofes o guiones. Entre 2 y 64 caracteres." 
+                    minlength="2" 
+                    maxlength="64">
+                
+                <label for="email">Correo electrónico *</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    required>
+                
+                <label for="birthdate">Fecha de nacimiento *</label>
+                <input 
+                    type="date" 
+                    id="birthdate" 
+                    required>
+            </div>
+            <div class="formDerecha">
+                <label for="last-name">Apellidos *</label>
+                <input 
+                    type="text" 
+                    id="last-name" 
+                    required 
+                    pattern="^[A-Za-zÀ-ÖØ-öø-ÿ'\\-]{2,128}$" 
+                    title="Solo letras, apóstrofes o guiones. Entre 2 y 128 caracteres." 
+                    minlength="2" 
+                    maxlength="128">
+                
+                <label for="phone">Teléfono</label>
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    pattern="^[0-9]{9,15}$" 
+                    title="Introduce un número de teléfono válido con entre 9 y 15 dígitos.">
+                
+                <label for="course">Curso *</label>
+                <select id="course" required>
+                    <option value="">Selecciona el curso</option>
+                    <option value="curso1">Curso 1</option>
+                    <option value="curso2">Curso 2</option>
+                    <option value="curso3">Curso 3</option>
+                </select>
+            </div>
         </fieldset>
-        </div>
-    
-        <div class="form-section">
-          <fieldset id="segunda">
-          <legend>Otras informaciones</legend>
-          <fieldset class="interno">
-            <legend>¿Has hecho otros cursos con nosotros?</legend>
-          <div class="label">
-            <label for="yes">
-            <input type="radio" name="other-courses" id="yes" required> Sí
-          </label>
-        
-          <label for="no">
-            <input type="radio" name="other-courses" id="no" required> No
-          </label>
-        </div>
-          </fieldset>
-          <div class="tituloLabel">
-          <label for="comments">¿Quieres comentar o preguntar algo?</label>
-        </div>
-          <textarea id="comments" rows="4"></textarea>
-          </fieldset>
-        </div>
-    
-        <div class="form-section">
-          <fieldset id="tercera">
-          <legend>Elige un método de pago *</legend>
-          <div class="label">
-          <label for="transfer">
-            <input type="radio" name="payment-method" id="transfer" required> Transferencia
-          </label>
-          <label for="credit-card">
-            <input type="radio" name="payment-method" id="credit-card" required> Tarjeta de débito / crédito
-          </label>
-          <label for="cash">
-            <input type="radio" name="payment-method" id="cash" required> En efectivo
-          </label>
-        </div>
+    </div>
+
+    <div class="form-section">
+        <fieldset id="segunda">
+            <legend>Otras informaciones</legend>
+            <fieldset class="interno">
+                <legend>¿Has hecho otros cursos con nosotros?</legend>
+                <div class="label">
+                    <label for="yes">
+                        <input type="radio" name="other-courses" id="yes" value="yes" required> Sí
+                    </label>
+
+                    <label for="no">
+                        <input type="radio" name="other-courses" id="no" value="no" required> No
+                    </label>
+                </div>
+            </fieldset>
+            <div class="tituloLabel">
+                <label for="comments">¿Quieres comentar o preguntar algo?</label>
+            </div>
+            <textarea id="comments" rows="4"></textarea>
         </fieldset>
+    </div>
+
+    <div class="form-section">
+        <fieldset id="tercera">
+            <legend>Elige un método de pago *</legend>
+            <div class="label">
+                <label for="transfer">
+                    <input type="radio" name="payment-method" id="transfer" value="transfer" required> Transferencia
+                </label>
+                <label for="credit-card">
+                    <input type="radio" name="payment-method" id="credit-card" value="credit-card" required> Tarjeta de débito / crédito
+                </label>
+                <label for="cash">
+                    <input type="radio" name="payment-method" id="cash" value="cash" required> En efectivo
+                </label>
+            </div>
+        </fieldset>
+    </div>
+    
+    <section class="seccionIns">
+        <p>
+            INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE 
+            <span>EL TALLER. Finalidades:</span> recogida de datos para la inscripción como socio del interesado. 
+            <span>Legitimación:</span> Consentimiento del interesado. 
+            <span>Destinatarios:</span> No están previstas cesiones de datos a terceros, excepto obligación legal. 
+            <span>Derechos:</span> Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a 
+            <a id="enlaceMarron" href="mailto:info@eltaller.es">info@eltaller.es.</a> 
+            <span>Información Adicional:</span> Puede ampliar la información en el enlace de 
+            <a id="enlaceMarron" href="">Aviso Legal</a> y 
+            <a id="enlaceMarron" href="">Política de privacidad.</a>
+        </p>
+    </section>
+
+    <div class="aceptarPolitica">
+        <div class="aceptar">
+            <label>
+                <input type="checkbox" required> He leído y acepto la <a href="#">política de privacidad</a>
+            </label>
         </div>
-        <section class="seccionIns">
-          <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <span>EL TALLER. Finalidades:</span> recogida de datos para la inscripción como socio del interesado. <span>Legitimación:</span> Consentimiento del interesado. <span>Destinatarios:</span> No están previstas cesiones de datos a terceros, excepto obligación legal. <span>Derechos:</span> Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a id="enlaceMarron" href="mailto:info@eltaller.es">info@eltaller.es.</a> <span>Información Adicional:</span> Puede ampliar la información en el enlace de <a id="enlaceMarron" href="">Aviso Legal</a> y <a id="enlaceMarron" href="">Política de privacidad.</a> </p>
-        </section>
-        <div class="aceptarPolitica">
-          <div class="aceptar">
-          <label>
-            <input type="checkbox" required> He leído y acepto la <a href="#">política de privacidad</a>
-          </label>
-        </div>
-        </div>
-        <div class="boton">
+    </div>
+
+    <div class="boton">
         <button type="submit">INSCRÍBEME</button>
-      </div>
-      </form>
+    </div>
+</form>
 
     </main>
 
